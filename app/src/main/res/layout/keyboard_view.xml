@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#202124"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/kbStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="2"
+        android:padding="6dp"
+        android:text="Tap the mic and talk"
+        android:textColor="#BDC1C6"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/kbSwitch"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/key_bg"
+            android:minWidth="0dp"
+            android:text="🌐"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/kbMic"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/mic_bg"
+            android:minWidth="0dp"
+            android:text="🎤"
+            android:textColor="#FFFFFF"
+            android:textSize="32sp" />
+
+        <Button
+            android:id="@+id/kbDelete"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/key_bg"
+            android:minWidth="0dp"
+            android:text="⌫"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/kbSpace"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_margin="4dp"
+            android:layout_weight="3"
+            android:background="@drawable/key_bg"
+            android:text="space"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/kbEnter"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/key_bg"
+            android:minWidth="0dp"
+            android:text="↵"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+    </LinearLayout>
+</LinearLayout>
