@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="a11y_desc">Shows a floating mic button when you tap a text box. Tap it, speak, and your words are typed in with filler words removed and punctuation added. Only the text box you are typing in is read, and password fields are ignored.</string>
+</resources>

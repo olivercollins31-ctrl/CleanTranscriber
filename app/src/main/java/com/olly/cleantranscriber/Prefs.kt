@@ -16,4 +16,14 @@ class Prefs(context: Context) {
     var lang: String
         get() = p.getString("lang", "en-GB") ?: "en-GB"
         set(v) { p.edit().putString("lang", v).apply() }
+
+    /** Distance of the mic button from the right edge, in pixels. -1 = not saved yet. */
+    var bubbleX: Int
+        get() = p.getInt("bx", -1)
+        set(v) { p.edit().putInt("bx", v).apply() }
+
+    /** Distance of the mic button from the top edge, in pixels. -1 = not saved yet. */
+    var bubbleY: Int
+        get() = p.getInt("by", -1)
+        set(v) { p.edit().putInt("by", v).apply() }
 }

@@ -22,7 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:text="Dictate into any app. Three quick steps to set up." />
+            android:text="Adds a mic button to any text box. Your normal keyboard stays as it is." />
 
         <TextView
             android:id="@+id/micStatus"
@@ -36,7 +36,7 @@
             android:text="1. Allow microphone" />
 
         <TextView
-            android:id="@+id/kbEnabledStatus"
+            android:id="@+id/svcStatus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp" />
@@ -45,13 +45,19 @@
             android:id="@+id/btnEnable"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="2. Enable the keyboard" />
+            android:text="2. Turn on in Accessibility settings" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="If it says restricted or is greyed out: open App info below, tap the three dots (top right), choose Allow restricted settings, then try step 2 again." />
 
         <Button
-            android:id="@+id/btnPick"
+            android:id="@+id/btnAppInfo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="3. Switch to Clean Transcriber" />
+            android:text="Open App info" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -98,7 +104,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:gravity="top"
-            android:hint="Test it here. Switch keyboard, then tap the mic."
+            android:hint="Test it here. Tap this box, then tap the mic button."
             android:inputType="textMultiLine|textCapSentences"
             android:minLines="5" />
     </LinearLayout>
